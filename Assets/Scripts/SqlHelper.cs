@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Data;
 using MySql.Data.MySqlClient;
 
-public class SplHelper
+public class SqlHelper
 {
     public MySqlConnection Connection;
     private DataSet m_Data;

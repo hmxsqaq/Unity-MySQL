@@ -17,7 +17,7 @@ public class UIManager : UGUIBase
     private InputField m_NameInput;
     private InputField m_AttackInput;
     private InputField m_HealthInput;
-    private readonly SplHelper m_DataHelper = new SplHelper();
+    private readonly SqlHelper m_DataHelper = new SqlHelper();
     protected override void Awake()
     {
         FindChildrenUIControl<Button>();
