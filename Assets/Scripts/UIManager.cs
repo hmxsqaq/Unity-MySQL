@@ -85,7 +85,10 @@ public class UIManager : UGUIBase
             string name = m_NameInput.text;
             string attack = m_AttackInput.text;
             string health = m_HealthInput.text;
-            m_DataHelper.InsertData(name, attack, health);
+            if (name != null && attack != null && health != null)
+            {
+                m_DataHelper.InsertData(name, attack, health);
+            }
         });
     }
 
